@@ -7,6 +7,7 @@
     <meta name="description" content="Become a vital voice within the thriving community of the Catholic Archdiocese of Kumasi Youth Magazine. Here's your chance to contribute articles and share your unique perspective on a myriad of topics, including health, social issues, politics, and matters concerning the Church. Join us in making a profound impact through the power of your words. Your insights matter, and together, let's inspire positive change and unity within the Catholic youth community.">
     <meta name="keywords" content=" Catholic Youth, Magazine, Articles, Writing, Youth Contributions">
     <meta name="author" content="Catholic Archdiocese of Kumasi | Arthur Kwabena LArbi Nathanie">
+        <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <link rel="icon" href="./images/logo.jpeg" type="image/jpeg">
     <link rel="apple-touch-icon" sizes="180x180" href="./images/apple.jpg">
     <title>Catholic Archdiocese of Kumasi | Contribute Articles</title>
@@ -25,7 +26,7 @@
                 <h2>Article Submission Form</h2>
                 <p>Fill out the form below to submit your article for consideration.</p>
             </div>
-            <form action="">
+            <form action="" id="articleForm">
                 <div class="forms">
                     <label>Full Name:</label>
                     <input type="text" name="name" placeholder="Enter your full name">
@@ -51,7 +52,7 @@
                     <input type="text" name="article_topic" placeholder="Enter your article topic">
                 </div>
                 <div class="forms">
-                    <button type="submit">Submit</button>
+        <button type="button" onclick="sendEmail()">Submit</button>
                 </div>
             </form>
         </div>
@@ -60,6 +61,7 @@
     <footer>
         <p>&copy; 2024 Catholic Archdiocese of Kumasi. All rights reserved.</p>
     </footer>
+    <script src="./app.js"></script>
 </body>
 
 </html>
